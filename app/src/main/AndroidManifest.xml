@@ -18,21 +18,45 @@
         </activity>
         <activity
             android:name=".AllSongsActivity"
-            android:label="@string/all_songs_string" />
+            android:label="@string/all_songs_string"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="parentActivityName"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".GenresActivity"
-            android:label="@string/genres_string" />
+            android:label="@string/genres_string"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="parentActivityName"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".AlbumsActivity"
-            android:label="@string/albums_string" />
+            android:label="@string/albums_string"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="parentActivityName"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".FavoriteActivity"
-            android:label="@string/favorite_string" />
+            android:label="@string/favorite_string"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="parentActivityName"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".UpgradeActivity"
-            android:label="@string/upgrade_string">
-
+            android:label="@string/upgrade_string"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="parentActivityName"
+                android:value=".MainActivity" />
         </activity>
+
     </application>
 
 </manifest>

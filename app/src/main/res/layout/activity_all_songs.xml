@@ -16,5 +16,26 @@
         android:text="@string/allsongs_desc_string"
         android:textSize="24sp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc_allsongs_text"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/allsongs_albums"
+            style="@style/btn_style"
+            android:text="@string/albums_string" />
+
+        <Button
+            android:id="@+id/allsongs_favorite"
+            style="@style/btn_style"
+            android:text="@string/favorite_string" />
+
+        <Button
+            android:id="@+id/allsongs_genres"
+            style="@style/btn_style"
+            android:text="@string/genres_string" />
+    </LinearLayout>
 
 </RelativeLayout>
