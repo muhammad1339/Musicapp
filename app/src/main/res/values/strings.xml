@@ -7,7 +7,10 @@
     <string name="genres_string">Genres</string>
     <string name="upgrade_string">Upgrade</string>
     <string name="genres_desc_string">This Activity for putting music in genres like Pop,Jazz,....</string>
-    <string name="albums_desc_string" >This Activity for putting music in Albums</string>
+    <string name="albums_desc_string">This Activity for putting music in Albums</string>
     <string name="favorite_desc_string">This Activity for showing Favorite songs</string>
     <string name="allsongs_desc_string">This Activity for showing all songs in music library</string>
+    <string name="upgrade_desc_string"><b>Google Payment API</b>
+        \n\n-Add dependencies
+    \n-Modify your Manifest</string>
 </resources>
