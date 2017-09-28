@@ -13,34 +13,21 @@ public class FavoriteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite);
-        Button goGenres = (Button) findViewById(R.id.favorite_genres);
-        Button goAllSongs = (Button) findViewById(R.id.favorite_allsongs);
-        Button goAlbums = (Button) findViewById(R.id.favorite_albums);
 
-        goGenres.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                goActivity(FavoriteActivity.this, GenresActivity.class);
-            }
-        });
+        Button goAllSongs = (Button) findViewById(R.id.favorite_allsongs);
+
         goAllSongs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 goActivity(FavoriteActivity.this, AllSongsActivity.class);
             }
         });
-        goAlbums.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                goActivity(FavoriteActivity.this, AlbumsActivity.class);
-            }
-        });
-
 
     }
 
     public void goActivity(Context src, Class dist) {
         Intent intent = new Intent(src, dist);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 

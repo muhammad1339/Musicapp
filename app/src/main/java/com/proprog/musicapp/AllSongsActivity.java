@@ -45,6 +45,7 @@ public class AllSongsActivity extends AppCompatActivity {
 
     public void goActivity(Context src, Class dist) {
         Intent intent = new Intent(src, dist);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 

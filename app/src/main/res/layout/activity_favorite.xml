@@ -26,15 +26,7 @@
             style="@style/btn_style"
             android:text="@string/all_songs_string" />
 
-        <Button
-            android:id="@+id/favorite_albums"
-            style="@style/btn_style"
-            android:text="@string/albums_string" />
 
-        <Button
-            android:id="@+id/favorite_genres"
-            style="@style/btn_style"
-            android:text="@string/genres_string" />
     </LinearLayout>
 
 </RelativeLayout>
