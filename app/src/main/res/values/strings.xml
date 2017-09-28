@@ -10,7 +10,18 @@
     <string name="albums_desc_string">This Activity for putting music in Albums</string>
     <string name="favorite_desc_string">This Activity for showing Favorite songs</string>
     <string name="allsongs_desc_string">This Activity for showing all songs in music library</string>
-    <string name="upgrade_desc_string"><b>Google Payment API</b>
-        \n\n-Add dependencies
-    \n-Modify your Manifest</string>
+    <string name="upgrade_desc_string">
+        <b>Google Payment API</b>
+        \n\n-Add dependencies\nat the build.gradle file we should add dependencies to setup google play services
+        \n-Modify your Manifest
+        To enable Pay with Google we need to add some metadata like this link
+        <u>https://developers.google.com/payments/setup</u>
+        \nThen we should integrate application with the Google Payment API
+        \nStep 1: Create PaymentsClient instance
+        \nStep 2: Call isReadyToPay API
+        \nStep 3: Create PaymentDataRequest object
+        \nStep 4: Create OnClickListener object
+        \nStep 5: Handle the PaymentData response object
+        \nStep 6: Refer to your payment processor
+    </string>
 </resources>
